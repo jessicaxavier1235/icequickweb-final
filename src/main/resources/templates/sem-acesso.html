@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br" xmlns:th="http://www.thymeleaf.org">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Sem acesso</title>
+        <link rel="stylesheet" th:href="@{/css/style.css}">
+    </head>
+
+    <body class="sistema-body">
+
+        <main class="main-content">
+
+            <div class="card-sistema p-4 text-center">
+
+                <h1 class="titulo">Acesso negado</h1>
+
+                <p>Você não tem permissão para acessar esta página.</p>
+
+                <a th:href="@{/pedidos}"
+                   class="btn-pink text-decoration-none">
+                    Voltar para pedidos
+                </a>
+
+            </div>
+
+        </main>
+
+    </body>
+</html>
